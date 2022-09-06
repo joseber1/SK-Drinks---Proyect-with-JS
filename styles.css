@@ -74,17 +74,16 @@ font-size: 20px;
 
 .card1
 {
-  border-radius: 20px;
-  color: black;
-  background-color: rgb(7, 66, 128);
-  margin-left: 80px;
-  display: grid;
-  display: inline-table;
-  height: 15px;
-  width: 20rem;
-
-  padding: 20px;
+ display: grid;
+ display: inline-table;
+ columns: 0;
+ background-color: rgb(7, 66, 128);
+ text-align: center;
+ border-radius: 10px;
+ margin-left: 25px;
 }
+
+
 
 .Drinks-name1
 {
@@ -99,15 +98,13 @@ font-family: 'Times New Roman', Times, serif;}
 
 .card2
 {
-  border-radius: 20px;
-  color: black;
-  background-color: orange;
-  margin-left: 80px;
-  display: flex;
-  height: 15px;
-  width: 18rem;
-  display: inline-table;
-  padding: 20px;
+display: grid;
+ display: inline-table;
+ columns: 0;
+ background-color: orange;
+ text-align: center;
+ border-radius: 10px;
+ margin-left: 25px;
 }
 
 .Drinks-name2
