@@ -51,18 +51,14 @@ do {
 
  //Entrega de Simulador Interactivo
 
- //Funciones 
- //Es un grupo de instrucciones que se agrupan para realizar una tarea 
- //Concreta
-
- //Como trabajamos con funciones:
+ let mensajes = "Bienvenido a SK Store";
 
  function holaMundo(){
-    //instrucciones
+
     alert("Hola Mundo");
  }
 
- //Llamar a la función (invocar a la función)
+
 holaMundo();
 
 
@@ -74,8 +70,8 @@ console.log(edad);
 console.log(nombre);
 console.log(february);
 
-//Funciones que ejecutan una acción
-//Funciones que además de ejecutar una acción retornan un dato.
+
+
 
 let Num1 = retornaElNum1();
 function retornaElNum1(){
@@ -84,68 +80,66 @@ function retornaElNum1(){
 
 console.log(Num1);
 
-// Función de suma: // Declarar
+
 function sumaT(valorC, valorV){
     let resultado = valorC + valorV;
     return resultado;
 }
 
-//PARAMETROS CON VARIABLES
-/*
 
-
-let numeroUno = 200;
-let numeroDos = 300;
-let resultadoSuma = sumaTradicional(numeroUno, numeroDos);
-console.log(resultadoSuma);
-
-
-*/
-
-
-//Llamar resultado
 let resultadoS = sumaT(150,100);
 sumaT(150,100)
 console.log(resultadoS);
 
-//
+
 let nombreAlumno = prompt("Ingrese su nombre");
-function saludarAlumno(nombreAlumno);
+function saludarAlumno(nombreAlumno)
 {
 alert("Hola Alumno" + nombreAlumno);
+};
+
+let Edad = prompt("Ingrese su edad");
+function saludarAlumno(Edad)
+{
+    Edad = prompt("Coloque su edad real")
+    return Edad;
+    alert("Hola Jose Ingrese bien su edad (NO ESTA PERMITIDO EL ACCESO A MENORES DE EDAD).") + Edad;
 }
 
 
 saludarAlumno("Jose");
+console.log(Edad);
 
-/**SCOPE O ALCANCE DE LAS VARIABLES **/
 
-//El scope o ambito de una variable es la zona del programa en la cual
-//se define el contexto al que pertenece la misma dentro del algoritmo.
-
-//JS se defien en dos ámbitos para las variables: global y local.
 
 let global = 10;
 function ejemploV(){
     console.log(global);
 }
 
-ejemploa();
 
-//VARIABLE LOCAL
-function ejemploC();{
-let resultadoejemploB = 10 + 10;
+
+let resultadoejemploA = resultadoS =(140, + 200 * 212);
+resultadoejemploA = (140, + 200 * 212);
+function ejemploA(){
 }
+console.log(ejemploA);
+console.log(resultadoS);
 
-//console.log(ejemploB);
+
+
+
+function ejemploC(){
+let resultadoejemploB = 10 + 10;
+};
+
+
 
 function nombreFuncion(parametros){
-    //instrucciones
+    
 }
 
-//Función ANONIMA
-//Una función anónima es una función que se define sin nombre y se
-//utiliza para ser pasada por parámetro o asignada a una variable.
+
 
 let sumaAnonima = function(c,v) {
     return c + v
@@ -158,9 +152,7 @@ let restaAnonima = function (c,v) {
 
 console.log(restaAnonima(1000, sumaAnonima(2500,2000)));
 
-//FUNCIÓN Flecha:
-//Indetificamos a las funciones flecha como funciones anónimas
-//de Sintaxis simplificada.
+
 
 let division = (c,v) => {
     return c / v;
@@ -169,16 +161,143 @@ let division = (c,v) => {
 console.log("División con función de flechas");
 console.log(division(100,100));
 
-//Multiplicación
+
 console.log("Multiplicación con función de flechas");
 let multiplicacion = (c,v) => c * v;
 
-//Sacar el return y las llaves.
+
 
 console.log(multiplicacion(40,40));
 
-//Ejs
+let food = "foods";
+const iva = 10.2;
 
+let valorUno = 8;
+let valorDos = 10;
+
+let promedio = (valorUno + valorDos) / 2;
+console.log(promedio);
+
+
+let nameclient1 = "Charles";
+let arroz = "Producto Arroz";
+let buy = 150;
+let smss = nameclient1 + "El valor es" + "de" + (buy + iva);
+console.log(smss);
+console.log(arroz);
+console.log(nameclient1);
+console.log(buy);
+console.log(food);
+let smss1 = "Arroz" + "El valor es" + "de" + (buy + iva);
+let pricearroz = "Precio" + nameclient + "El valor es" + "de" + (buy + iva) ;
+
+/** **/
+
+let nameclient2 = "Charles";
+let espagueti = "Producto Espagueti";
+let buy2 = 180;
+
+let smss2 = nameclient + "El valor es" + "de" + (buy + iva);
+let espaguetiprice = "Precio" + nameclient + "El valor es" + "de" + (buy + iva) ;
+console.log(smss2);
+console.log(espagueti);
+console.log(nameclien2);
+console.log(buy2);
+console.log(food);
+console.log(espaguetiprice);
+
+/** **/
+
+let frijoles = "Producto Frijoles";
+let nameclient3 = "Charles";
+let buy3 = 100;
+let smss3 = nameclient + "El valor es" + "de" + (buy + iva);
+let frijolesprecio = "Precio" + nameclient + "El valor es" + "de" + (buy + iva) ;
+console.log(smss3);
+console.log(frijoles);
+console.log(nameclien3);
+console.log(buy3);
+console.log(food);
+console.log(frijolesprecio);
+
+/** **/
+
+
+
+let granos = "Producto Granos";
+let nameclient4 = "Charles";
+let buy4 = 90;
+let smss4 = nameclient + "El valor es" + "de" + (buy + iva);
+console.log(smss4);
+console.log(granos);
+console.log(nameclient4);
+console.log(buy4);
+console.log(food);
+console.log(granosprecios);
+
+
+/** **/
+
+let salsas = "Producto Salsa";
+let nameclient5 = "Charles";
+let buy5 = 90;
+let smss5 = nameclient + "El valor es" + "de" + (buy + iva);
+console.log(smss5);
+console.log(salsas);
+console.log(nameclient5);
+console.log(buy5);
+console.log(food);
+console.log(granosprecios);
+
+/** **/
+
+let mayonesa = "Producto Mayonesa";
+let nameclient6 = "Charles";
+let buy6 = 250;
+let smss6 = nameclient + "El valor es" + "de" + (buy + iva);
+console.log(smss6);
+console.log(salsas);
+console.log(nameclient6);
+console.log(buy6);
+console.log(food);
+console.log(granosprecios);
+
+/** **/
+
+let mostaza = "Producto Mostaza;"
+let nameclient7 = "Charles";
+let buy7 = 250;
+let smss7 = nameclient + "El valor es" + "de" + (buy + iva);
+console.log(smss7);
+console.log(salsas);
+console.log(nameclient7);
+console.log(buy7);
+console.log(food);
+console.log(granosprecios);
+
+/** **/
+
+let condimentos = "Producto Condimentos";
+let nameclient8 = "Charles";
+let buy8 = 40;
+let smss8 = nameclient + "El valor es" + "de" + (buy + iva);
+console.log(smss8);
+console.log(salsas);
+console.log(nameclient8);
+console.log(buy8);
+console.log(food);
+console.log(granosprecios);
+
+/** **/
+
+console.log(food);
+console.log(arroz);
+console.log(espagueti);
+console.log(granos);
+console.log(salsas);
+console.log(mayonesa);
+console.log(mostaza);
+console.log(condimentos);
 let nombred = nombred => console.log("Hi"+ nombred);
 
 nombred ("JK");
