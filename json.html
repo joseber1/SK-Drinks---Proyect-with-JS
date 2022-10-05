@@ -1,0 +1,210 @@
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../jsonstorage/library.css">
+<style>
+    body{
+      background-color:gold ;
+      width: 99%;
+      height: 100%;
+      padding: 2px;
+      margin: 1px;
+      letter-spacing: 0.02em;
+      line-height: 1.6;
+      margin-left: 50px;
+  
+    }
+  
+    html{
+      height: 100%;
+    }
+  
+    .title{
+      text-align: center;
+      font-size: 40px;
+      margin-top: 100px;
+    }
+  
+    .main-name{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-ser;
+      padding: 2px;
+      margin-bottom: 2ex;
+      text-align: center;
+      color: aliceblue;
+      background-color: chocolate;
+      margin-right: 100px;
+    }
+  
+    .container-1{
+      display: grid;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+    }
+  
+    footer{
+      
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 4px;
+      text-align: center;
+    }
+  
+  .card1
+  
+  
+  {
+    width: 75vw;
+    max-width: 700px;
+    min-width: 320px;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+    margin-left: 350px;
+    @media screen and {
+      (max-width: 940px;)
+    }
+  }
+  
+  .formulario
+  {
+  text-align: center;
+  justify-content: center;
+  margin-left: 30px;
+  }
+  
+  .img{
+   box-shadow: 0px 3px 5px rgb(black);
+   border-radius: 15px;
+   width: 100%;
+   min-height: 100%;
+   margin-right: 100px;
+    
+  }
+  
+  .card{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: url('https://s3-us-west-2.amazonaws.com/sintec-uploads/wp-content/uploads/2019/05/15170518/Retail-II.jpg')
+    center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    z-index:1 ;
+  }
+  
+  
+  .card1::before
+  .card::after{
+  
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: white;
+  }
+  
+  
+  .footer{
+    text-align: center;
+    padding: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 100px;
+  
+  }
+
+</style>
+</head>
+
+<div class="logo">
+  <img src="" alt="logo">
+</div>
+
+<h1 class="main-name">Sistema de Compra "Sk's Drink"</h1>
+
+<div class="card1">
+    <img class="img" src="https://s3-us-west-2.amazonaws.com/sintec-uploads/wp-content/uploads/2019/05/15170518/Retail-II.jpg" alt=""  >
+  </div>
+  
+    
+    <article class="card1">
+<div class="card__content">
+
+  <h3 class="card__title">...</h3>
+  <p class="card__description">..</p>
+
+</div>
+    </article>
+
+
+</div> 
+
+  
+    <br><br>
+
+    <div class="formulario">
+    <form id="formulario">
+      <label for="nombre">Nombre del Cliente:</label>
+  <input id="nombre" type="text">
+  <br><br>
+  
+  <label for="apellido">Apellido del Cliente</>
+  <input id="apellido" type="text">
+  <br><br>
+  
+  <label for="ticketdeCompra">Ticket de Compra</label>
+  <input id="ticketdCompra"><type="text">
+  <br><br>
+  
+  <label for="Compra">Compra de Producto (1)</label>
+  <select name="Compra" id="Compra">
+    <option value="sodas">Sodas</option>
+    <option value="cocacola">Coca Cola</option>
+    <option value="sprite">Sprite</option>
+    <option value="fanta">Fanta</option>
+    <option value="sodauva">Soda Uva</option>
+  </div>
+</div>
+  </select>
+  </form>
+
+  <button id="Comprar">Comprar</button>
+
+  <br><br>
+
+  <h2>Ver Compras Reciente</h2>
+  <br><br>
+  <button id="verCompras">Ver Compras Recientes</button>
+  <div class="contenedorCompras"></div>
+
+  <br><br>
+
+  <div id="div" class="div"></div>
+  
+
+ <br><br>
+ <div class="footer">
+<h2>Sk's Drink @2022</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati corrupti suscipit repellendus est harum perferendis quae doloribus tenetur accusantium cum quas repudiandae sint eligendi officia adipisci temporibus nulla, minus maxime.</p>
+
+<i class="ri-instagram-line icon"></i>
+<i class="ri-facebook-circle-line icon"></i>
+<i class="whatsapp-line icon"></i>
+
+
+  <footer>
+
+</footer>
+</div>
+<script src="../jsonstorage/librerias.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+  </body>
+  </html>
