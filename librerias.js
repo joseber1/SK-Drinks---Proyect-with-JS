@@ -103,26 +103,7 @@ boton3.addEventListener("click", () => {
 
     let carrito = ["coca Cola", "sprite","soda guarana"];
 
-/** 
-Swal.fire({
-title: "Estás seguro que quieres eliminar el Producto?",
-icon: "warning",
-confirmButtonText: "Aceptar",
-showCancelButton: true,
-cancelButtonText: "Cancelar",
-cancelButtonColor: "#EC7063",
-confirmButtonTextColor : "#1D8348"
 
-
-}).then((result) => {
-    if(result.isConfirmed) {
-    
-        carrito = carrito.filter((producto) => producto !== "coca cola" )
-    
-
- }
-
-});*/
 
 
 }).then((result) => {
