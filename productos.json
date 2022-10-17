@@ -1,0 +1,18 @@
+[
+
+{"nombre": "Pasta", "precio": 150, "id": 1},
+{"nombre": "Harina", "precio": 350, "id": 2},
+{"nombre": "Pan", "precio": 250, "id": 3},
+{"nombre": "Huevos", "precio": 550, "id": 4},
+{"nombre": "Atún", "precio": 150, "id": 5},
+{"nombre": "Queso", "precio": 150, "id": 6},
+
+
+{"nombre": "Jamón", "precio": 350, "id": 8},
+{"nombre": "Salame", "precio": 650, "id": 9},
+{"nombre": "Queso Rallado", "precio": 450, "id": 10},
+{"nombre": "Salame Italiano", "precio": 550, "id": 11},
+{"nombre": "Salame Chico", "precio": 250, "id": 12},
+{"nombre": "Queso Amarillo", "precio": 220, "id": 13}
+
+]
