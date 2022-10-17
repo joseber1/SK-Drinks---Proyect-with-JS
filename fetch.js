@@ -2,16 +2,9 @@
 
 
 
-/**Metodos**/
-//GET PARA OBTENER INFORMACIÓN ( O RECURSO ) DEL SERVIDOR. SUELEN SER LAS MÁS UTILIZADA
-//POST: PARA ENVIAR INFORMACIÓN AL SERVIDOR PARA CREAR ALGÚN RECURSO.
-//PUT: PARA CREAR O MODIFICAR ALGÚN RECURSO EN EL SERVIDOR.
-//DELETE: PARA ELIMINAR ALGÚN RECURSO EN EL SERVIDOR:
-
-
-//FETCH
-//JS no ofrece fetch() para hacer peticiones HTTP a algún servicio externo.
-//Como estas peticiones son asincrónicas, convenientemente fetch trabaja con promesas.
+//Agregué una simulación de lo visto en clase, usando el método fetch para mostrar info, mediante una API, en este caso de albums de fotos y de 
+//productos de consumo diario. y de Cambio de moneda...
+//FETCH utilizado (prueba para proyecto final)
 
 
 const apiAlbums = "https://jsonplaceholder.typicode.com/albums";
@@ -37,7 +30,7 @@ function mostrarFotos(datos) {
     });
 }
 
-
+//API de cambio de Moneda
 const criptoYa = "https://criptoya.com/api/dolar";
 let divDolar = document.getElementById("divDolar");
 
@@ -64,12 +57,12 @@ setInterval ( ()=> {
  })
   
 
- 
+ //catch error para ver si hay algún error será encontrado.
  .catch(error => console.error(error));
 
 }, 3000 )
 
-
+//rutas relactivas aplicado en productos
 
 /***Rutas Relactivas */
 
@@ -109,3 +102,5 @@ datos.forEach ( producto => {
 })
 .catch(error => console.log(error))
 .finally(() => console.log("Proceso terminado Exitosamente"));
+
+//finally para indicar una acción en el fetch
