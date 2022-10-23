@@ -14,3 +14,5 @@ Comisión: 34020 JavaScript
 10)Utilizando Fetch 
 
 Simulador de Compras de bebidas, aplicando todo lo visto en la clase de Javascript.....
+
+Cada archivos esta dentro de la carpeta Card, para mantener su orden!!
