@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sk`s Drinks 40% OFF SALE </title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+* {
+    box-sizing: content-box;
+    font-size: 14px;
+    width: 10px 10px ;
+    margin: 20px 20px 20px ;
+    padding: 10px 5px;
+}
+
+
+    
+
+body{
+    background-color: rgb(252, 252, 7);
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.mainname{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+.gridcolums{
+
+    @media (max-width: 600px) {
+   .facet_sidebar 
+    display: none;
+  
+    font-size: 154px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 150px ;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));
+    grid-auto-rows: 22rem;
+    background-color: aliceblue;
+}
+} 
+
+
+.gridcolums:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.contenedorProductos{
+    justify-content: center;
+    display: flex;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+
+
+.agregaralCarrito:hover{
+background-color: gray;
+color: black;
+cursor: pointer;
+transform: scale(1.03);
+transition: all 1s ease;
+}
+
+.cards{
+    justify-content: center;
+    border-radius: 4px 4px;
+    padding: 2px 2px;
+    margin: 2px 2px;
+}
+
+.formulario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @media (max-width: 600px) {
+
+}
+
+  }
+
+/*footer*/
+.alink{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding: 20px 20px;
+    margin: 10px 10px;
+}
+
+.alink:hover{
+background-color: gray;
+color: black;
+cursor: pointer;
+transform: scale(1.03);
+transition: all 1s ease;
+}
+
+    </style>
+
+</head>
+<!--Body Container-->
+<body class="container">
+    
+<!--Main name-->
+    <h1 class="mainname" >Sk's Drinks</h1>
+    <a href="../card/localstorage.html">Storage de tus productos aquí</a>
+    <!--Stock de Productos-->
+    <h2 class="">Stock de Productos: </h2>
+    <!--Contenedor Productos-->
+    <div class="row" id="contenedorProductos"></div>
+
+  
+<!--Carrito de compra name -->
+    <h2 class="carname" >Carrito de Compras: </h2>
+
+    <button class="btn btn-primary verCarritod " id="verCarrito">Ver Carrito</button>
+
+    <button class="btn btn-primary vaciarCarritod " id="vaciarCarrito">Vaciar Carrito</button>
+
+    <h3>Total de la compra: <span class="totalComprad" id="totalCompra">0</span></h3>
+    <div class="row py-3" class="contenedorCarritod" id="contenedorCarrito"></div>
+
+    <section class="gridcolums">
+    <img src="https://thumbs.dreamstime.com/b/bottles-soft-drinks-market-shelves-istanbul-november-november-istanbul-turkey-36100520.jpg" alt="" width="300px" height="250px" >
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore exercitationem unde ullam esse corrupti assumenda inventore? Accusantium odio, voluptatibus doloremque dolorem, quisquam facilis voluptate suscipit animi sapiente sequi libero.</p>
+     
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore exercitationem unde ullam esse corrupti assumenda inventore? Accusantium odio, voluptatibus doloremque dolorem, quisquam facilis voluptate suscipit animi sapiente sequi libero.</p>
+
+   </section>
+
+   <section class="gridcolums">
+    <img src="https://thumbs.dreamstime.com/b/bottles-soft-drinks-market-shelves-istanbul-november-november-istanbul-turkey-36100520.jpg" alt="" width="300px" height="250px" >
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore exercitationem unde ullam esse corrupti assumenda inventore? Accusantium odio, voluptatibus doloremque dolorem, quisquam facilis voluptate suscipit animi sapiente sequi libero.</p>
+     
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore exercitationem unde ullam esse corrupti assumenda inventore? Accusantium odio, voluptatibus doloremque dolorem, quisquam facilis voluptate suscipit animi sapiente sequi libero.</p>
+
+   </section>
+  
+    </section>
+</div>
+
+
+
+
+<footer class="footer" >
+
+<h4>Sk's Drinks @2022 Todo los derechos reservados</h4>
+<p>Marca registrada en la ciuda autonoma de Buenos Aires, licencia certificada y registrada.
+    Venta de bebidas, energeticas, y bebidas naturales y soda al mayor y detal.
+</p>
+
+<div class="alink">
+<a href="">Leer más aquí</a>
+<a href="">Contactanos aquí</a>
+<a href="">Redes Sociales</a>
+<a href="">Nuestros Patrocinantes</a>
+</div>
+
+</footer>    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/card/card.js"></script>
+    <script src="/card/main.js"></script>
+    <script src="/card/localstorage.js"></script>
+    <script src="/card/reservas.js"></script>
+</body>
+</html>

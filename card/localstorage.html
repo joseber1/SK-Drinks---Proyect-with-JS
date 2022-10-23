@@ -1,0 +1,61 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 - Storage JSON</title>
+
+<style>
+body{
+    background-color: black;
+    color: wheat;
+    display: grid;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @media (max-width: 600px) {
+
+}
+
+  }
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+    <marquee><h1>Sistema de Compras Sk's Drinks</h1></marquee>
+    <form id="formulario">
+        <label for="nombre">Nombre del Cliente: </label>
+        <input id="nombre" type="text">
+        <br><br>
+
+        <label for="apellido">Apellido del Cliente</label>
+        <input id="apellido" type="text">
+        <br><br>
+
+        <label for="compra">Número de Compras</label>
+        <input id="compra" type="text">
+        <br><br>
+
+        <label for="lista">Lista de Productos: </label>
+        <select name="lista" id="lista">
+            <option value="listaDeBebidas">ListaDeBebidas</option>
+            <option value="ListaDeComida">ListaDeComida</option>
+            <option value="ListaDeFrutas">ListaDeFrutas</option>
+            <option value="ListaDeHortalizas">ListaDeHortalizas</option>
+        </select>
+        <button>Comprar</button>
+    </form>
+    
+    <h2>Ver Compras Recientes: </h2>
+    <br><br>
+    <button id="verCompras">VER COMPRAS</button>
+    <div id="contenedorCompras"></div>
+    
+    
+    <script src="localstorage.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body></html>
